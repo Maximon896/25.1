@@ -25,8 +25,8 @@ function createDomElement(tagName, textContent, container) {
 }
 
 // Демонстрація використання функції
-// const container = document.body // В якості прикладу використовуємо body як контейнер
-// console.log(createDomElement('p', 'This paragraph has been added to the specified container.', container))
+const container = document.body // В якості прикладу використовуємо body як контейнер
+console.log(createDomElement('p', 'This paragraph has been added to the specified container.', container))
 
 /*
  * #2
@@ -52,7 +52,7 @@ function setUserInfoCookie(key, value) {
 }
 
 // Демонстрація використання функції
-// setUserInfoCookie('language', 'en');
+setUserInfoCookie('language', 'en');
 
 /*
  * #3
@@ -85,7 +85,7 @@ function getUserInfo(key) {
     return value;
 }
 // Демонстрація використання функцій
-// saveUserInfo('username', 'JohnDoe');
-// console.log(getUserInfo('username')); // Виведе: JohnDoe
+saveUserInfo('username', 'JohnDoe');
+console.log(getUserInfo('username')); // Виведе: JohnDoe
 
 export { createDomElement, setUserInfoCookie, saveUserInfo, getUserInfo }
